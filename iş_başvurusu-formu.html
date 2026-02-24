@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Başvurusu Formu</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+    <form class="job-form">
+
+        <div class="form-container">
+
+            <label class="photo-box">
+                <input type="file" id="fileInput" accept="image/*">
+                <img id="preview" src="">
+
+                <span class="photo-text">Fotoğraf</span>
+                <button type="button" id="removePhoto">X</button>
+            </label>
+
+            <h3 class="card-header">İş Başvuru Formu</h3>
+
+
+            Ad: <input type="text" name="ad">
+            <br><br>
+            Soyad: <input type="text" name="soyad"><br><br>
+
+            <label for="dogum tarihi">Doğum Tarihi:</label>
+            <input type="date" id="dogum_tarihi" name="dogum_tarihi"><br><br>
+
+            Doğum Yeri: <input type="text" name="dogum_yeri"><br><br>
+
+            Cinsiyetiniz:<br><br>
+            Erkek <input type="radio" name="cinsiyet">
+            Kadın <input type="radio" name="cinsiyet"><br><br>
+
+            Yabancı Diller: <input type="checkbox" name="yabancı diller" value="ingilizce">İngilizce
+            <input type="checkbox" name="yabancı diller" value="Almanca">Almanca
+            <input type="checkbox" name="yabancı diller" value="Fransızca">Fransızca <br>
+
+            <input type="checkbox" name="diğer">Diğer:<input type="text" name="yabancı_diller"><br><br>
+
+            Askerlik: <select name="askerlik" id="askerlik-card">
+                <option value="yaptım">yaptım</option>
+                <option value="tecilli">tecilli</option>
+                <option value="muaf">muaf</option>
+            </select> <br><br>
+
+            Eğitim Durumu: <br><br>
+            <input type="radio" name="eğitim_durumu" value="ilkokul"> İlkokul <br>
+            <input type="radio" name="eğitim_durumu" value="ortaokul"> Ortaokul <br>
+            <input type="radio" name="eğitim_durumu" value="lise"> Lise <br>
+            <input type="radio" name="eğitim_durumu" value="üniversite"> Üniversite <br><br>
+
+            İş Deneyimleriniz:
+            <ol>
+                <li> <input type="text" name="iş_deneyimleriniz"></li><br>
+                <li> <input type="text" name="iş_deneyimleriniz"></li><br>
+                <li> <input type="text" name="iş_deneyimleriniz"></li><br>
+            </ol>
+
+            İletişim:<br><br>
+            Telefon: <input type="text" name="telefon"><br><br>
+
+            <label for="email">E-mail Adresiniz:</label>
+            <input type="email" name="email " id="email" placeholder="Email adresinizi giriniz."> <br>
+
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
